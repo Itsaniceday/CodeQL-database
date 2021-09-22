@@ -1,0 +1,208 @@
+[2021-09-22 11:06:14] This is codeql database create -l=cpp -s=D:\codeql-home\drivers\kmdf -c msbuild /t:rebuild D:\codeql-home\drivers\kmdf\kmdfecho.sln /p:UseSharedCompilation=false /p:SignMode=off /p:Configuration=Release /p:Platform=x64 D:\codeql-home\databases\kmdf -j 0
+[2021-09-22 11:06:14] Log file was started late.
+[2021-09-22 11:06:14] [PROGRESS] database create> Running command [msbuild, /t:rebuild, D:\codeql-home\drivers\kmdf\kmdfecho.sln, /p:UseSharedCompilation=false, /p:SignMode=off, /p:Configuration=Release, /p:Platform=x64] in D:\codeql-home\drivers\kmdf.
+[2021-09-22 11:06:14] Running plumbing command: codeql database trace-command --working-dir=D:\codeql-home\drivers\kmdf -- D:\codeql-home\databases\kmdf msbuild /t:rebuild D:\codeql-home\drivers\kmdf\kmdfecho.sln /p:UseSharedCompilation=false /p:SignMode=off /p:Configuration=Release /p:Platform=x64
+[2021-09-22 11:06:14] [PROGRESS] database trace-command> D:\codeql-home\databases\kmdf: Running in D:\codeql-home\drivers\kmdf: [msbuild, /t:rebuild, D:\codeql-home\drivers\kmdf\kmdfecho.sln, /p:UseSharedCompilation=false, /p:SignMode=off, /p:Configuration=Release, /p:Platform=x64]
+[2021-09-22 11:06:14] Setting up tracing from specification at D:\codeql-home\codeql\cpp\tools\win64\compiler-tracing.spec.
+[2021-09-22 11:06:14] [build] 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.10.2+857e5a733
+[2021-09-22 11:06:14] [build] 版权所有(C) Microsoft Corporation。保留所有权利。
+[2021-09-22 11:06:14] [build] 在此解决方案中一次生成一个项目。若要启用并行生成，请添加“-m”开关。
+[2021-09-22 11:06:14] [build] 生成启动时间为 2021/9/22 11:06:14。
+[2021-09-22 11:06:15] [build] 项目“D:\codeql-home\drivers\kmdf\kmdfecho.sln”在节点 1 上(rebuild 个目标)。
+[2021-09-22 11:06:15] [build] ValidateSolutionConfiguration:
+[2021-09-22 11:06:15] [build]   正在生成解决方案配置“Release|x64”。
+[2021-09-22 11:06:15] [build] 项目“D:\codeql-home\drivers\kmdf\kmdfecho.sln”(1)正在节点 1 上生成“D:\codeql-home\drivers\kmdf\exe\echoapp.vcxproj”(2) (Rebuild 个目标)。
+[2021-09-22 11:06:15] [build] _PrepareForClean:
+[2021-09-22 11:06:15] [build]   正在删除文件“x64\Release\echoapp.tlog\echoapp.lastbuildstate”。
+[2021-09-22 11:06:15] [build] CoreClean:
+[2021-09-22 11:06:15] [build]   正在删除文件“D:\codeql-home\drivers\kmdf\exe\x64\Release\echoapp.exe”。
+[2021-09-22 11:06:15] [build] CleanOutput:
+[2021-09-22 11:06:15] [build]   正在删除文件“x64\Release\echoapp.exe.recipe”。
+[2021-09-22 11:06:15] [build]   正在删除文件“x64\Release\echoapp.vcxproj.FileListAbsolute.txt”。
+[2021-09-22 11:06:15] [build] DriverBuildNotifications:
+[2021-09-22 11:06:15] [build]   Building 'echoapp' with toolset 'WindowsApplicationForDrivers10.0' and the 'Universal' target platform.
+[2021-09-22 11:06:15] [build] InitializeBuildStatus:
+[2021-09-22 11:06:15] [build]   正在创建“x64\Release\echoapp.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+[2021-09-22 11:06:15] [build] ClCompile:
+[2021-09-22 11:06:15] [build]   C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30037\bin\HostX86\x64\CL.exe /c /Ix64\Release\ /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\km\\" /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\\" /Zi /nologo /W4 /WX /diagnostics:column /O2 /D _WIN64 /D _AMD64_ /D AMD64 /D WIN32_LEAN_AND_MEAN=1 /D _WIN32_WINNT=0x0A00 /D WINVER=0x0A00 /D WINNT=1 /D NTDDI_VERSION=0xA00000B /D UNICODE /D _UNICODE /Gm- /MT /GS /guard:cf /fp:precise /Qspectre /Zc:wchar_t- /Zc:forScope /Zc:inline /Fo"x64\Release\\" /Fd"x64\Release\vc142.pdb" /external:env:EXTERNAL_INCLUDE /external:W4 /Gz /TP /FI"C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\shared\warning.h" /FC /errorReport:queue /D_ATL_NO_WIN_SUPPORT /D_CRT_USE_WINAPI_PARTITION_APP /wd4603 echoapp.cpp
+[2021-09-22 11:06:15] [build]   echoapp.cpp
+[2021-09-22 11:06:16] [build] Link:
+[2021-09-22 11:06:16] [build]   C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30037\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:"x64\Release\echoapp.exe" /INCREMENTAL:NO /NOLOGO /WX onecoreuap.lib mincore.lib ucrt.lib /NODEFAULTLIB:kernel32.lib /NODEFAULTLIB:user32.lib /NODEFAULTLIB:libucrt.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"x64\Release\echoapp.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"x64\Release\echoapp.lib" /MACHINE:X64 /guard:cf /IGNORE:4198,4010,4037,4039,4065,4070,4078,4087,4089,4221,4108,4088,4218,4218,4235 x64\Release\echoapp.obj
+[2021-09-22 11:06:17] [build]   echoapp.vcxproj -> D:\codeql-home\drivers\kmdf\exe\x64\Release\echoapp.exe
+[2021-09-22 11:06:17] [build] ApiValidator:
+[2021-09-22 11:06:17] [build]   Validating 'Universal' driver using ApiValidator.exe
+[2021-09-22 11:06:17] [build]   cmd.exe /D /C "C:\Users\development\AppData\Local\Temp\tmp01e62eb2f44c4874b14c758ad504608a.cmd"
+[2021-09-22 11:06:17] [build]   "C:\Program Files (x86)\Windows Kits\10\bin\10.0.22000.0\x64\ApiValidator.exe" -DriverPackagePath:x64\Release\echoapp.exe -SupportedApiXmlFiles:"C:\Program Files (x86)\Windows Kits\10\build\universalDDIs\x64\UniversalDDIs.xml" -ModuleWhiteListXmlFiles:"C:\Program Files (x86)\Windows Kits\10\build\universalDDIs\x64\ModuleWhiteList.xml" -ApiExtractorExePath:"C:\Program Files (x86)\Windows Kits\10\bin\10.0.22000.0\x64" 
+[2021-09-22 11:06:18] [build]   Driver is 'Universal'.
+[2021-09-22 11:06:18] [build] FinalizeBuildStatus:
+[2021-09-22 11:06:18] [build]   正在删除文件“x64\Release\echoapp.tlog\unsuccessfulbuild”。
+[2021-09-22 11:06:18] [build]   正在对“x64\Release\echoapp.tlog\echoapp.lastbuildstate”执行 Touch 任务。
+[2021-09-22 11:06:18] [build] 已完成生成项目“D:\codeql-home\drivers\kmdf\exe\echoapp.vcxproj”(Rebuild 个目标)的操作。
+[2021-09-22 11:06:18] [build] 项目“D:\codeql-home\drivers\kmdf\kmdfecho.sln”(1)正在节点 1 上生成“D:\codeql-home\drivers\kmdf\driver\AutoSync\echo.vcxproj”(3) (Rebuild 个目标)。
+[2021-09-22 11:06:18] [build] _PrepareForClean:
+[2021-09-22 11:06:18] [build]   正在删除文件“x64\Release\echo.tlog\echo.lastbuildstate”。
+[2021-09-22 11:06:18] [build] CoreClean:
+[2021-09-22 11:06:18] [build]   正在删除文件“D:\codeql-home\drivers\kmdf\driver\AutoSync\x64\Release\echo.sys”。
+[2021-09-22 11:06:18] [build] CleanOutput:
+[2021-09-22 11:06:18] [build]   正在删除文件“x64\Release\echo.sys.recipe”。
+[2021-09-22 11:06:18] [build]   正在删除文件“x64\Release\echo.vcxproj.FileListAbsolute.txt”。
+[2021-09-22 11:06:18] [build]   正在删除文件“x64\Release\echo\echo.inf”。
+[2021-09-22 11:06:18] [build]   正在删除文件“x64\Release\echo\echo.sys”。
+[2021-09-22 11:06:18] [build]   正在移除目录“x64\Release\echo\”。
+[2021-09-22 11:06:18] [build] DriverBuildNotifications:
+[2021-09-22 11:06:18] [build]   Building 'echo' with toolset 'WindowsKernelModeDriver10.0' and the 'Universal' target platform.
+[2021-09-22 11:06:18] [build]   Using KMDF 1.15.
+[2021-09-22 11:06:18] [build] InitializeBuildStatus:
+[2021-09-22 11:06:18] [build]   正在创建“x64\Release\echo.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+[2021-09-22 11:06:18] [build] StampInf:
+[2021-09-22 11:06:18] [build]   C:\Program Files (x86)\Windows Kits\10\bin\10.0.22000.0\x86\stampinf.exe -d "*" -a "amd64" -v "*" -k "1.15"  -x -f x64\Release\echo.inf 
+[2021-09-22 11:06:18] [build]   Copying "D:\codeql-home\drivers\kmdf\driver\AutoSync\echo.inx" to "x64\Release\echo.inf" for stamping
+[2021-09-22 11:06:18] [build]   Stamping x64\Release\echo.inf
+[2021-09-22 11:06:18] [build]   Stamping [Version] section with DriverVer=09/22/2021,11.6.18.284
+[2021-09-22 11:06:18] [build] ClCompile:
+[2021-09-22 11:06:18] [build]   C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30037\bin\HostX86\x64\CL.exe /c /Ix64\Release\ /I..\..\exe /Zi /nologo /W4 /WX /diagnostics:column /Ox /Os /Oy- /D _WIN64 /D _AMD64_ /D AMD64 /D _WIN32_WINNT=0x0A00 /D WINVER=0x0A00 /D WINNT=1 /D NTDDI_VERSION=0xA00000B /D KMDF_VERSION_MAJOR=1 /D KMDF_VERSION_MINOR=15 /GF /Gm- /Zp8 /GS /guard:cf /Gy /fp:precise /Qspectre /Zc:wchar_t- /Zc:forScope /Zc:inline /GR- /Fo"x64\Release\\" /Fd"x64\Release\vc142.pdb" /external:env:EXTERNAL_INCLUDE /external:W4 /Gz /wd4603 /wd4627 /wd4986 /wd4987 /FI"C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\shared\warning.h" /FC /errorReport:queue /kernel -cbstring -d2epilogunwind  /d1nodatetime /d1import_no_registry /d2AllowCompatibleILVersions /d2Zi+ device.c driver.c queue.c
+[2021-09-22 11:06:18] [build]   device.c
+[2021-09-22 11:06:18] [build]   driver.c
+[2021-09-22 11:06:18] [build]   queue.c
+[2021-09-22 11:06:18] [build]   正在生成代码...
+[2021-09-22 11:06:19] [build] Link:
+[2021-09-22 11:06:19] [build]   C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30037\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:"x64\Release\echo.sys" /VERSION:"10.0" /INCREMENTAL:NO /NOLOGO /WX /SECTION:"INIT,d" "C:\Program Files (x86)\Windows Kits\10\lib\10.0.22000.0\km\x64\BufferOverflowFastFailK.lib" "C:\Program Files (x86)\Windows Kits\10\lib\10.0.22000.0\km\x64\ntoskrnl.lib" "C:\Program Files (x86)\Windows Kits\10\lib\10.0.22000.0\km\x64\hal.lib" "C:\Program Files (x86)\Windows Kits\10\lib\10.0.22000.0\km\x64\wmilib.lib" "C:\Program Files (x86)\Windows Kits\10\lib\wdf\kmdf\x64\1.15\WdfLdr.lib" "C:\Program Files (x86)\Windows Kits\10\lib\wdf\kmdf\x64\1.15\WdfDriverEntry.lib" /NODEFAULTLIB /MANIFEST:NO /DEBUG /PDB:"x64\Release\echo.pdb" /SUBSYSTEM:NATIVE,"10.00" /Driver /OPT:REF /OPT:ICF /ENTRY:"FxDriverEntry" /RELEASE /IMPLIB:"x64\Release\echo.lib" /MERGE:"_TEXT=.text;_PAGE=PAGE" /MACHINE:X64 /PROFILE /guard:cf /kernel /IGNORE:4198,4010,4037,4039,4065,4070,4078,4087,4089,4221,4108,4088,4218,4218,4235 /osversion:10.0 /pdbcompress /debugtype:pdata x64\Release\device.obj
+[2021-09-22 11:06:19] [build]   x64\Release\driver.obj
+[2021-09-22 11:06:19] [build]   x64\Release\queue.obj
+[2021-09-22 11:06:19] [build]   echo.vcxproj -> D:\codeql-home\drivers\kmdf\driver\AutoSync\x64\Release\echo.sys
+[2021-09-22 11:06:19] [build] ApiValidator:
+[2021-09-22 11:06:19] [build]   Validating 'Universal' driver using ApiValidator.exe
+[2021-09-22 11:06:19] [build]   cmd.exe /D /C "C:\Users\development\AppData\Local\Temp\tmpd40fd3e4324c43d2a76e00087c049e29.cmd"
+[2021-09-22 11:06:19] [build]   "C:\Program Files (x86)\Windows Kits\10\bin\10.0.22000.0\x64\ApiValidator.exe" -DriverPackagePath:x64\Release\echo.sys -SupportedApiXmlFiles:"C:\Program Files (x86)\Windows Kits\10\build\universalDDIs\x64\UniversalDDIs.xml" -ModuleWhiteListXmlFiles:"C:\Program Files (x86)\Windows Kits\10\build\universalDDIs\x64\ModuleWhiteList.xml" -ApiExtractorExePath:"C:\Program Files (x86)\Windows Kits\10\bin\10.0.22000.0\x64" 
+[2021-09-22 11:06:19] [build]   Driver is 'Universal'.
+[2021-09-22 11:06:19] [build] DriverPackageTarget:
+[2021-09-22 11:06:19] [build]   Packaging up the following projects for the following configurations:
+[2021-09-22 11:06:19] [build]   
+[2021-09-22 11:06:19] [build]    Configuration='' Platform=''
+[2021-09-22 11:06:19] [build]   
+[2021-09-22 11:06:19] [build]   
+[2021-09-22 11:06:19] [build]   The following files will be packaged:
+[2021-09-22 11:06:19] [build]   
+[2021-09-22 11:06:19] [build]   File to package:      D:\codeql-home\drivers\kmdf\driver\AutoSync\x64\Release\echo.sys.
+[2021-09-22 11:06:19] [build]   Location in Package:  \echo.sys.
+[2021-09-22 11:06:19] [build]   Requested by project: 
+[2021-09-22 11:06:19] [build]   
+[2021-09-22 11:06:19] [build]   
+[2021-09-22 11:06:19] [build]   File to package:      x64\Release\echo.inf.
+[2021-09-22 11:06:19] [build]   Location in Package:  \echo.inf.
+[2021-09-22 11:06:19] [build]   Requested by project: 
+[2021-09-22 11:06:19] [build]   
+[2021-09-22 11:06:19] [build]   
+[2021-09-22 11:06:19] [build]   正在创建目录“x64\Release\echo”。
+[2021-09-22 11:06:19] [build]   正在将文件从“D:\codeql-home\drivers\kmdf\driver\AutoSync\x64\Release\echo.inf”复制到“D:\codeql-home\drivers\kmdf\driver\AutoSync\x64\Release\echo\echo.inf”。
+[2021-09-22 11:06:19] [build]   正在将文件从“D:\codeql-home\drivers\kmdf\driver\AutoSync\x64\Release\echo.sys”复制到“D:\codeql-home\drivers\kmdf\driver\AutoSync\x64\Release\echo\echo.sys”。
+[2021-09-22 11:06:19] [build] Inf2Cat:
+[2021-09-22 11:06:19] [build]   C:\Program Files (x86)\Windows Kits\10\bin\10.0.22000.0\x86\inf2cat.exe /os:10_x64 /driver:x64\Release\echo\ 
+[2021-09-22 11:06:20] [build]   ........................
+[2021-09-22 11:06:20] [build]   Signability test complete.
+[2021-09-22 11:06:20] [build]   
+[2021-09-22 11:06:20] [build]   Errors:
+[2021-09-22 11:06:20] [build]   None
+[2021-09-22 11:06:20] [build]   
+[2021-09-22 11:06:20] [build]   Warnings:
+[2021-09-22 11:06:20] [build]   None
+[2021-09-22 11:06:20] [build]   
+[2021-09-22 11:06:20] [build]   Catalog generation complete.
+[2021-09-22 11:06:20] [build]   D:\codeql-home\drivers\kmdf\driver\AutoSync\x64\Release\echo\kmdfsamples.cat
+[2021-09-22 11:06:20] [build] FinalizeBuildStatus:
+[2021-09-22 11:06:20] [build]   正在删除文件“x64\Release\echo.tlog\unsuccessfulbuild”。
+[2021-09-22 11:06:20] [build]   正在对“x64\Release\echo.tlog\echo.lastbuildstate”执行 Touch 任务。
+[2021-09-22 11:06:20] [build] 已完成生成项目“D:\codeql-home\drivers\kmdf\driver\AutoSync\echo.vcxproj”(Rebuild 个目标)的操作。
+[2021-09-22 11:06:20] [build] 项目“D:\codeql-home\drivers\kmdf\kmdfecho.sln”(1)正在节点 1 上生成“D:\codeql-home\drivers\kmdf\driver\DriverSync\echo_2.vcxproj”(4) (Rebuild 个目标)。
+[2021-09-22 11:06:20] [build] _PrepareForClean:
+[2021-09-22 11:06:20] [build]   正在删除文件“x64\Release\echo_2.tlog\echo_2.lastbuildstate”。
+[2021-09-22 11:06:20] [build] CoreClean:
+[2021-09-22 11:06:20] [build]   正在删除文件“D:\codeql-home\drivers\kmdf\driver\DriverSync\x64\Release\echo_2.sys”。
+[2021-09-22 11:06:20] [build] CleanOutput:
+[2021-09-22 11:06:20] [build]   正在删除文件“x64\Release\echo_2.sys.recipe”。
+[2021-09-22 11:06:20] [build]   正在删除文件“x64\Release\echo_2.vcxproj.FileListAbsolute.txt”。
+[2021-09-22 11:06:20] [build]   正在删除文件“x64\Release\echo_2\echo_2.inf”。
+[2021-09-22 11:06:20] [build]   正在删除文件“x64\Release\echo_2\echo_2.sys”。
+[2021-09-22 11:06:20] [build]   正在移除目录“x64\Release\echo_2\”。
+[2021-09-22 11:06:20] [build] DriverBuildNotifications:
+[2021-09-22 11:06:20] [build]   Building 'echo_2' with toolset 'WindowsKernelModeDriver10.0' and the 'Universal' target platform.
+[2021-09-22 11:06:20] [build]   Using KMDF 1.15.
+[2021-09-22 11:06:20] [build] InitializeBuildStatus:
+[2021-09-22 11:06:20] [build]   正在创建“x64\Release\echo_2.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+[2021-09-22 11:06:20] [build] StampInf:
+[2021-09-22 11:06:20] [build]   C:\Program Files (x86)\Windows Kits\10\bin\10.0.22000.0\x86\stampinf.exe -d "*" -a "amd64" -v "*" -k "1.15"  -x -f x64\Release\echo_2.inf 
+[2021-09-22 11:06:20] [build]   Copying "D:\codeql-home\drivers\kmdf\driver\DriverSync\echo_2.inx" to "x64\Release\echo_2.inf" for stamping
+[2021-09-22 11:06:20] [build]   Stamping x64\Release\echo_2.inf
+[2021-09-22 11:06:20] [build]   Stamping [Version] section with DriverVer=09/22/2021,11.6.20.397
+[2021-09-22 11:06:20] [build] ClCompile:
+[2021-09-22 11:06:20] [build]   C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30037\bin\HostX86\x64\CL.exe /c /Ix64\Release\ /I..\..\exe /I..\..\inc /Zi /nologo /W4 /WX /diagnostics:column /Ox /Os /Oy- /D _WIN64 /D _AMD64_ /D AMD64 /D _WIN32_WINNT=0x0A00 /D WINVER=0x0A00 /D WINNT=1 /D NTDDI_VERSION=0xA00000B /D KMDF_VERSION_MAJOR=1 /D KMDF_VERSION_MINOR=15 /GF /Gm- /Zp8 /GS /guard:cf /Gy /fp:precise /Qspectre /Zc:wchar_t- /Zc:forScope /Zc:inline /GR- /Fo"x64\Release\\" /Fd"x64\Release\vc142.pdb" /external:env:EXTERNAL_INCLUDE /external:W4 /Gz /wd4603 /wd4627 /wd4986 /wd4987 /FI"C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\shared\warning.h" /FC /errorReport:queue /kernel -cbstring -d2epilogunwind  /d1nodatetime /d1import_no_registry /d2AllowCompatibleILVersions /d2Zi+ device.c driver.c queue.c
+[2021-09-22 11:06:20] [build]   device.c
+[2021-09-22 11:06:20] [build]   driver.c
+[2021-09-22 11:06:20] [build]   queue.c
+[2021-09-22 11:06:20] [build]   正在生成代码...
+[2021-09-22 11:06:21] [build] Link:
+[2021-09-22 11:06:21] [build]   C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30037\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:"x64\Release\echo_2.sys" /VERSION:"10.0" /INCREMENTAL:NO /NOLOGO /WX /SECTION:"INIT,d" "C:\Program Files (x86)\Windows Kits\10\lib\10.0.22000.0\km\x64\BufferOverflowFastFailK.lib" "C:\Program Files (x86)\Windows Kits\10\lib\10.0.22000.0\km\x64\ntoskrnl.lib" "C:\Program Files (x86)\Windows Kits\10\lib\10.0.22000.0\km\x64\hal.lib" "C:\Program Files (x86)\Windows Kits\10\lib\10.0.22000.0\km\x64\wmilib.lib" "C:\Program Files (x86)\Windows Kits\10\lib\wdf\kmdf\x64\1.15\WdfLdr.lib" "C:\Program Files (x86)\Windows Kits\10\lib\wdf\kmdf\x64\1.15\WdfDriverEntry.lib" /NODEFAULTLIB /MANIFEST:NO /DEBUG /PDB:"x64\Release\echo_2.pdb" /SUBSYSTEM:NATIVE,"10.00" /Driver /OPT:REF /OPT:ICF /ENTRY:"FxDriverEntry" /RELEASE /IMPLIB:"x64\Release\echo_2.lib" /MERGE:"_TEXT=.text;_PAGE=PAGE" /MACHINE:X64 /PROFILE /guard:cf /kernel /IGNORE:4198,4010,4037,4039,4065,4070,4078,4087,4089,4221,4108,4088,4218,4218,4235 /osversion:10.0 /pdbcompress /debugtype:pdata x64\Release\device.obj
+[2021-09-22 11:06:21] [build]   x64\Release\driver.obj
+[2021-09-22 11:06:21] [build]   x64\Release\queue.obj
+[2021-09-22 11:06:21] [build]   echo_2.vcxproj -> D:\codeql-home\drivers\kmdf\driver\DriverSync\x64\Release\echo_2.sys
+[2021-09-22 11:06:21] [build] ApiValidator:
+[2021-09-22 11:06:21] [build]   Validating 'Universal' driver using ApiValidator.exe
+[2021-09-22 11:06:21] [build]   cmd.exe /D /C "C:\Users\development\AppData\Local\Temp\tmp56fdfa44b01c463e87c28ecbef173499.cmd"
+[2021-09-22 11:06:21] [build]   "C:\Program Files (x86)\Windows Kits\10\bin\10.0.22000.0\x64\ApiValidator.exe" -DriverPackagePath:x64\Release\echo_2.sys -SupportedApiXmlFiles:"C:\Program Files (x86)\Windows Kits\10\build\universalDDIs\x64\UniversalDDIs.xml" -ModuleWhiteListXmlFiles:"C:\Program Files (x86)\Windows Kits\10\build\universalDDIs\x64\ModuleWhiteList.xml" -ApiExtractorExePath:"C:\Program Files (x86)\Windows Kits\10\bin\10.0.22000.0\x64" 
+[2021-09-22 11:06:21] [build]   Driver is 'Universal'.
+[2021-09-22 11:06:21] [build] DriverPackageTarget:
+[2021-09-22 11:06:21] [build]   Packaging up the following projects for the following configurations:
+[2021-09-22 11:06:21] [build]   
+[2021-09-22 11:06:21] [build]    Configuration='' Platform=''
+[2021-09-22 11:06:21] [build]   
+[2021-09-22 11:06:21] [build]   
+[2021-09-22 11:06:21] [build]   The following files will be packaged:
+[2021-09-22 11:06:21] [build]   
+[2021-09-22 11:06:21] [build]   File to package:      D:\codeql-home\drivers\kmdf\driver\DriverSync\x64\Release\echo_2.sys.
+[2021-09-22 11:06:21] [build]   Location in Package:  \echo_2.sys.
+[2021-09-22 11:06:21] [build]   Requested by project: 
+[2021-09-22 11:06:21] [build]   
+[2021-09-22 11:06:22] [build]   
+[2021-09-22 11:06:22] [build]   File to package:      x64\Release\echo_2.inf.
+[2021-09-22 11:06:22] [build]   Location in Package:  \echo_2.inf.
+[2021-09-22 11:06:22] [build]   Requested by project: 
+[2021-09-22 11:06:22] [build]   
+[2021-09-22 11:06:22] [build]   
+[2021-09-22 11:06:22] [build]   正在创建目录“x64\Release\echo_2”。
+[2021-09-22 11:06:22] [build]   正在创建目录“x64\Release\echo_2”。
+[2021-09-22 11:06:22] [build]   正在将文件从“D:\codeql-home\drivers\kmdf\driver\DriverSync\x64\Release\echo_2.inf”复制到“D:\codeql-home\drivers\kmdf\driver\DriverSync\x64\Release\echo_2\echo_2.inf”。
+[2021-09-22 11:06:22] [build]   正在将文件从“D:\codeql-home\drivers\kmdf\driver\DriverSync\x64\Release\echo_2.sys”复制到“D:\codeql-home\drivers\kmdf\driver\DriverSync\x64\Release\echo_2\echo_2.sys”。
+[2021-09-22 11:06:22] [build] Inf2Cat:
+[2021-09-22 11:06:22] [build]   C:\Program Files (x86)\Windows Kits\10\bin\10.0.22000.0\x86\inf2cat.exe /os:10_x64 /driver:x64\Release\echo_2\ 
+[2021-09-22 11:06:22] [build]   ........................
+[2021-09-22 11:06:22] [build]   Signability test complete.
+[2021-09-22 11:06:22] [build]   
+[2021-09-22 11:06:22] [build]   Errors:
+[2021-09-22 11:06:22] [build]   None
+[2021-09-22 11:06:22] [build]   
+[2021-09-22 11:06:22] [build]   Warnings:
+[2021-09-22 11:06:22] [build]   None
+[2021-09-22 11:06:22] [build]   
+[2021-09-22 11:06:22] [build]   Catalog generation complete.
+[2021-09-22 11:06:22] [build]   D:\codeql-home\drivers\kmdf\driver\DriverSync\x64\Release\echo_2\kmdfsamples.cat
+[2021-09-22 11:06:22] [build] FinalizeBuildStatus:
+[2021-09-22 11:06:22] [build]   正在删除文件“x64\Release\echo_2.tlog\unsuccessfulbuild”。
+[2021-09-22 11:06:22] [build]   正在对“x64\Release\echo_2.tlog\echo_2.lastbuildstate”执行 Touch 任务。
+[2021-09-22 11:06:22] [build] 已完成生成项目“D:\codeql-home\drivers\kmdf\driver\DriverSync\echo_2.vcxproj”(Rebuild 个目标)的操作。
+[2021-09-22 11:06:22] [build] 已完成生成项目“D:\codeql-home\drivers\kmdf\kmdfecho.sln”(rebuild 个目标)的操作。
+[2021-09-22 11:06:22] [build] 已成功生成。
+[2021-09-22 11:06:22] [build]     0 个警告
+[2021-09-22 11:06:22] [build]     0 个错误
+[2021-09-22 11:06:22] [build] 已用时间 00:00:07.54
+[2021-09-22 11:06:22] Plumbing command codeql database trace-command completed.
+[2021-09-22 11:06:22] [PROGRESS] database create> Finalizing database at D:\codeql-home\databases\kmdf.
+[2021-09-22 11:06:22] Running plumbing command: codeql database finalize --threads=0 --mode=normal -- D:\codeql-home\databases\kmdf
+[2021-09-22 11:06:22] [ERROR] database finalize> No source code was seen during the build.
+                              This can occur if the specified build commands failed to compile or process any code.
+                               - Confirm that there is some source code for the specified language in the project.
+                               - For codebases written in Go, JavaScript, TypeScript, and Python, do not specify 
+                                 an explicit --command.
+                               - For other languages, the --command must specify a "clean" build which compiles 
+                                 all the source code files without reusing existing build artefacts.
+[2021-09-22 11:06:22] Plumbing command codeql database finalize completed with status 32.
+[2021-09-22 11:06:22] Exiting with code 32
