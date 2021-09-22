@@ -1,0 +1,213 @@
+[T 11:06:14 14140] Reading configuration file D:\codeql-home\databases\kmdf\working\tracing\compiler-tracing17166587096068644559.spec...
+[T 11:06:14 14140] Reading configuration file D:\codeql-home\databases\kmdf\working\tracing\compiler-tracing17166587096068644559.spec...
+[T 11:06:14 14140] Compilers file as of 2021-09-22 11:06:14
+[T 11:06:14 14140] Compiler pattern: **/clang-cl.exe
+[T 11:06:14 14140] Replace intercepted call: 0
+[T 11:06:14 14140] Extractor: D:\codeql-home\codeql\cpp\tools\win64/extractor.exe
+[T 11:06:14 14140] Prepend[0] "--mimic"
+[T 11:06:14 14140] Prepend[1] ""${compiler}""
+[T 11:06:14 14140] Compilers file as of 2021-09-22 11:06:14
+[T 11:06:14 14140] Compiler pattern: **/cl.exe
+[T 11:06:14 14140] Replace intercepted call: 0
+[T 11:06:14 14140] Extractor: D:\codeql-home\codeql\cpp\tools\win64/extractor.exe
+[T 11:06:14 14140] Prepend[0] "--mimic"
+[T 11:06:14 14140] Prepend[1] ""${compiler}""
+[T 11:06:14 14140] Compilers file as of 2021-09-22 11:06:14
+[T 11:06:14 14140] Compiler pattern: **/lld-link.exe
+[T 11:06:14 14140] Replace intercepted call: 0
+[T 11:06:14 14140] Extractor: D:\codeql-home\codeql\cpp\tools\win64/extractor.exe
+[T 11:06:14 14140] Prepend[0] "--ms-linker"
+[T 11:06:14 14140] Prepend[1] "--semmle-linker-executable"
+[T 11:06:14 14140] Prepend[2] ""${compiler}""
+[T 11:06:14 14140] Compilers file as of 2021-09-22 11:06:14
+[T 11:06:14 14140] Compiler pattern: **/link.exe
+[T 11:06:14 14140] Replace intercepted call: 0
+[T 11:06:14 14140] Extractor: D:\codeql-home\codeql\cpp\tools\win64/extractor.exe
+[T 11:06:14 14140] Prepend[0] "--ms-linker"
+[T 11:06:14 14140] Prepend[1] "--semmle-linker-executable"
+[T 11:06:14 14140] Prepend[2] ""${compiler}""
+[T 11:06:14 14140] Compilers file as of 2021-09-22 11:06:14
+[T 11:06:14 14140] Compiler pattern: **/collect2.exe
+[T 11:06:14 14140] Replace intercepted call: 0
+[T 11:06:14 14140] Extractor: D:\codeql-home\codeql\cpp\tools\win64/extractor.exe
+[T 11:06:14 14140] Prepend[0] "--linker"
+[T 11:06:14 14140] Prepend[1] "--semmle-linker-executable"
+[T 11:06:14 14140] Prepend[2] ""${compiler}""
+[T 11:06:14 14140] Compilers file as of 2021-09-22 11:06:14
+[T 11:06:14 14140] Compiler pattern: **/*-ld*.exe
+[T 11:06:14 14140] Replace intercepted call: 0
+[T 11:06:14 14140] Extractor: D:\codeql-home\codeql\cpp\tools\win64/extractor.exe
+[T 11:06:14 14140] Prepend[0] "--linker"
+[T 11:06:14 14140] Prepend[1] "--semmle-linker-executable"
+[T 11:06:14 14140] Prepend[2] ""${compiler}""
+[T 11:06:14 14140] Compilers file as of 2021-09-22 11:06:14
+[T 11:06:14 14140] Compiler pattern: **/ld*.exe
+[T 11:06:14 14140] Replace intercepted call: 0
+[T 11:06:14 14140] Extractor: D:\codeql-home\codeql\cpp\tools\win64/extractor.exe
+[T 11:06:14 14140] Prepend[0] "--linker"
+[T 11:06:14 14140] Prepend[1] "--semmle-linker-executable"
+[T 11:06:14 14140] Prepend[2] ""${compiler}""
+[T 11:06:14 14140] Compilers file as of 2021-09-22 11:06:14
+[T 11:06:14 14140] Compiler pattern: **/cx51.exe
+[T 11:06:14 14140] Replace intercepted call: 0
+[T 11:06:14 14140] Extractor: D:\codeql-home\codeql\cpp\tools\win64/extractor.exe
+[T 11:06:14 14140] Prepend[0] "--mimic"
+[T 11:06:14 14140] Prepend[1] ""${compiler}""
+[T 11:06:14 14140] Compilers file as of 2021-09-22 11:06:14
+[T 11:06:14 14140] Compiler pattern: **/c51.exe
+[T 11:06:14 14140] Replace intercepted call: 0
+[T 11:06:14 14140] Extractor: D:\codeql-home\codeql\cpp\tools\win64/extractor.exe
+[T 11:06:14 14140] Prepend[0] "--mimic"
+[T 11:06:14 14140] Prepend[1] ""${compiler}""
+[T 11:06:14 14140] Compilers file as of 2021-09-22 11:06:14
+[T 11:06:14 14140] Compiler pattern: **/*-g++.exe
+[T 11:06:14 14140] Replace intercepted call: 0
+[T 11:06:14 14140] Extractor: D:\codeql-home\codeql\cpp\tools\win64/extractor.exe
+[T 11:06:14 14140] Prepend[0] "--mimic"
+[T 11:06:14 14140] Prepend[1] ""${compiler}""
+[T 11:06:14 14140] Compilers file as of 2021-09-22 11:06:14
+[T 11:06:14 14140] Compiler pattern: **/*-gcc.exe
+[T 11:06:14 14140] Replace intercepted call: 0
+[T 11:06:14 14140] Extractor: D:\codeql-home\codeql\cpp\tools\win64/extractor.exe
+[T 11:06:14 14140] Prepend[0] "--mimic"
+[T 11:06:14 14140] Prepend[1] ""${compiler}""
+[T 11:06:14 14140] Compilers file as of 2021-09-22 11:06:14
+[T 11:06:14 14140] Compiler pattern: **/*-clang.exe
+[T 11:06:14 14140] Replace intercepted call: 0
+[T 11:06:14 14140] Extractor: D:\codeql-home\codeql\cpp\tools\win64/extractor.exe
+[T 11:06:14 14140] Prepend[0] "--mimic"
+[T 11:06:14 14140] Prepend[1] ""${compiler}""
+[T 11:06:14 14140] Compilers file as of 2021-09-22 11:06:14
+[T 11:06:14 14140] Compiler pattern: **/armcc.exe
+[T 11:06:14 14140] Replace intercepted call: 0
+[T 11:06:14 14140] Extractor: D:\codeql-home\codeql\cpp\tools\win64/extractor.exe
+[T 11:06:14 14140] Prepend[0] "--mimic"
+[T 11:06:14 14140] Prepend[1] ""${compiler}""
+[T 11:06:14 14140] Compilers file as of 2021-09-22 11:06:14
+[T 11:06:14 14140] Compiler pattern: **/g++*.exe
+[T 11:06:14 14140] Replace intercepted call: 0
+[T 11:06:14 14140] Extractor: D:\codeql-home\codeql\cpp\tools\win64/extractor.exe
+[T 11:06:14 14140] Prepend[0] "--mimic"
+[T 11:06:14 14140] Prepend[1] ""${compiler}""
+[T 11:06:14 14140] Compilers file as of 2021-09-22 11:06:14
+[T 11:06:14 14140] Compiler pattern: **/gcc*.exe
+[T 11:06:14 14140] Replace intercepted call: 0
+[T 11:06:14 14140] Extractor: D:\codeql-home\codeql\cpp\tools\win64/extractor.exe
+[T 11:06:14 14140] Prepend[0] "--mimic"
+[T 11:06:14 14140] Prepend[1] ""${compiler}""
+[T 11:06:14 14140] Compilers file as of 2021-09-22 11:06:14
+[T 11:06:14 14140] Compiler pattern: **/clang*.exe
+[T 11:06:14 14140] Replace intercepted call: 0
+[T 11:06:14 14140] Extractor: D:\codeql-home\codeql\cpp\tools\win64/extractor.exe
+[T 11:06:14 14140] Prepend[0] "--mimic"
+[T 11:06:14 14140] Prepend[1] ""${compiler}""
+[T 11:06:14 3796] Reading configuration file D:\codeql-home\databases\kmdf\working\tracing\compiler-tracing17166587096068644559.spec...
+[T 11:06:14 17936] Reading configuration file D:\codeql-home\databases\kmdf\working\tracing\compiler-tracing17166587096068644559.spec...
+[T 11:06:14 17936] Found LdrLoadDll (wow-64) at 000000007773DDC0
+[T 11:06:14 13916] Reading configuration file D:\codeql-home\databases\kmdf\working\tracing\compiler-tracing17166587096068644559.spec...
+[T 11:06:15 18236] Reading configuration file D:\codeql-home\databases\kmdf\working\tracing\compiler-tracing17166587096068644559.spec...
+[T 11:06:15 18236] === Intercepted call to C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30037\bin\Hostx86\x64\cl.exe === 
+[E 11:06:16 11620] CodeQL C/C++ Extractor 1.27.0-SNAPSHOT
+[E 11:06:16 11620] Current directory: D:\codeql-home\drivers\kmdf\exe
+[E 11:06:16 11620] Command: D:\codeql-home\codeql\cpp\tools\win64/extractor.exe --mimic "C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30037\bin\Hostx86\x64\cl.exe" @C:\Users\development\AppData\Local\Temp\tmpe5b911276cdd4f6cbbc92abf8fbc197a.rsp
+Warning: C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30037\bin\Hostx86\x64\cl.exe does not look like a compiler. If it is infact a compiler, please contact GitHub.
+[E 11:06:16 11620] Not a compiler; exiting. Reason: --version stdout was:
+
+--version stderr was:
+用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.29.30038.1 版
+
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+
+
+cl: 命令行 warning D9002 :忽略未知选项“--version”
+
+cl: 命令行 error D8003 :缺少源文件名
+
+
+process exited with code 2
+
+7.0-SNAPSHOT
+[E 11:06:16 16468] Current directory: D:\codeql-home\drivers\kmdf\exe
+[E 11:06:16 16468] Command: D:\codeql-home\codeql\cpp\tools\win64/extractor.exe --mimic "C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30037\bin\Hostx86\x64\cl.exe" --version
+[E 11:06:16 16468] Within classification loop; exiting.
+[T 11:06:16 11620] === Intercepted call to C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30037\bin\Hostx86\x64\cl.exe === 
+[E 11:06:16 15664] CodeQL C/C++ Extractor 1.27.0-SNAPSHOT
+[E 11:06:16 15664] Current directory: D:\codeql-home\drivers\kmdf\exe
+[E 11:06:16 15664] Command: D:\codeql-home\codeql\cpp\tools\win64/extractor.exe --mimic "C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30037\bin\Hostx86\x64\cl.exe" --help
+[E 11:06:16 15664] Within classification loop; exiting.
+[T 11:06:16 14352] Reading configuration file D:\codeql-home\databases\kmdf\working\tracing\compiler-tracing17166587096068644559.spec...
+[T 11:06:16 14352] === Intercepted call to C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30037\bin\Hostx86\x64\link.exe === 
+[E 11:06:16 6760] CodeQL C/C++ Extractor 1.27.0-SNAPSHOT
+[E 11:06:16 6760] Current directory: D:\codeql-home\drivers\kmdf\exe
+[E 11:06:16 6760] Command: D:\codeql-home\codeql\cpp\tools\win64/extractor.exe --ms-linker --semmle-linker-executable "C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30037\bin\Hostx86\x64\link.exe" /ERRORREPORT:QUEUE @C:\Users\development\AppData\Local\Temp\tmp6ab1244d23484891a6f6c6930350606b.rsp
+[E 11:06:16 6760] Expanded response file C:\Users\development\AppData\Local\Temp\tmp6ab1244d23484891a6f6c6930350606b.rsp: /OUT:x64\Release\echoapp.exe /INCREMENTAL:NO /NOLOGO /WX onecoreuap.lib mincore.lib ucrt.lib /NODEFAULTLIB:kernel32.lib /NODEFAULTLIB:user32.lib /NODEFAULTLIB:libucrt.lib /MANIFEST "/MANIFESTUAC:level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:x64\Release\echoapp.pdb /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:x64\Release\echoapp.lib /MACHINE:X64 /guard:cf /IGNORE:4198,4010,4037,4039,4065,4070,4078,4087,4089,4221,4108,4088,4218,4218,4235 x64\Release\echoapp.obj
+[E 11:06:16 6760] Warning[extractor-c++]: In print_object_names: Could not open object file "onecoreuap.lib" (error 2: No such file or directory).
+[E 11:06:16 6760] Warning[extractor-c++]: In print_object_names: Could not open object file "mincore.lib" (error 2: No such file or directory).
+[E 11:06:16 6760] Warning[extractor-c++]: In print_object_names: Could not open object file "ucrt.lib" (error 2: No such file or directory).
+[T 11:06:16 15628] Reading configuration file D:\codeql-home\databases\kmdf\working\tracing\compiler-tracing17166587096068644559.spec...
+[T 11:06:16 13132] Reading configuration file D:\codeql-home\databases\kmdf\working\tracing\compiler-tracing17166587096068644559.spec...
+[T 11:06:16 18068] Reading configuration file D:\codeql-home\databases\kmdf\working\tracing\compiler-tracing17166587096068644559.spec...
+[T 11:06:16 15936] Reading configuration file D:\codeql-home\databases\kmdf\working\tracing\compiler-tracing17166587096068644559.spec...
+[T 11:06:17 7596] Reading configuration file D:\codeql-home\databases\kmdf\working\tracing\compiler-tracing17166587096068644559.spec...
+[T 11:06:17 18536] Reading configuration file D:\codeql-home\databases\kmdf\working\tracing\compiler-tracing17166587096068644559.spec...
+[T 11:06:17 7212] Reading configuration file D:\codeql-home\databases\kmdf\working\tracing\compiler-tracing17166587096068644559.spec...
+[T 11:06:17 15180] Reading configuration file D:\codeql-home\databases\kmdf\working\tracing\compiler-tracing17166587096068644559.spec...
+[T 11:06:17 12928] Reading configuration file D:\codeql-home\databases\kmdf\working\tracing\compiler-tracing17166587096068644559.spec...
+[T 11:06:17 13152] Reading configuration file D:\codeql-home\databases\kmdf\working\tracing\compiler-tracing17166587096068644559.spec...
+[T 11:06:18 17220] Reading configuration file D:\codeql-home\databases\kmdf\working\tracing\compiler-tracing17166587096068644559.spec...
+[T 11:06:18 12692] Reading configuration file D:\codeql-home\databases\kmdf\working\tracing\compiler-tracing17166587096068644559.spec...
+[T 11:06:18 6020] Reading configuration file D:\codeql-home\databases\kmdf\working\tracing\compiler-tracing17166587096068644559.spec...
+[T 11:06:18 6020] === Intercepted call to C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30037\bin\Hostx86\x64\cl.exe === 
+[E 11:06:19 3944] CodeQL C/C++ Extractor 1.27.0-SNAPSHOT
+[E 11:06:19 3944] Current directory: D:\codeql-home\drivers\kmdf\driver\AutoSync
+[E 11:06:19 3944] Command: D:\codeql-home\codeql\cpp\tools\win64/extractor.exe --mimic "C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30037\bin\Hostx86\x64\cl.exe" @C:\Users\development\AppData\Local\Temp\tmpec1eba0cc41044c385eef195136d46f3.rsp
+[E 11:06:19 3944] Not a compiler; exiting. Reason: --version stdout was:
+[T 11:06:19 708] Reading configuration file D:\codeql-home\databases\kmdf\working\tracing\compiler-tracing17166587096068644559.spec...
+[T 11:06:19 708] === Intercepted call to C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30037\bin\Hostx86\x64\link.exe === 
+[E 11:06:19 9752] CodeQL C/C++ Extractor 1.27.0-SNAPSHOT
+[E 11:06:19 9752] Current directory: D:\codeql-home\drivers\kmdf\driver\AutoSync
+[E 11:06:19 9752] Command: D:\codeql-home\codeql\cpp\tools\win64/extractor.exe --ms-linker --semmle-linker-executable "C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30037\bin\Hostx86\x64\link.exe" /ERRORREPORT:QUEUE @C:\Users\development\AppData\Local\Temp\tmp09a8472e60314e3e91ed6710e2f29c66.rsp
+[E 11:06:19 9752] Expanded response file C:\Users\development\AppData\Local\Temp\tmp09a8472e60314e3e91ed6710e2f29c66.rsp: /OUT:x64\Release\echo.sys /VERSION:10.0 /INCREMENTAL:NO /NOLOGO /WX /SECTION:INIT,d "C:\Program Files (x86)\Windows Kits\10\lib\10.0.22000.0\km\x64\BufferOverflowFastFailK.lib" "C:\Program Files (x86)\Windows Kits\10\lib\10.0.22000.0\km\x64\ntoskrnl.lib" "C:\Program Files (x86)\Windows Kits\10\lib\10.0.22000.0\km\x64\hal.lib" "C:\Program Files (x86)\Windows Kits\10\lib\10.0.22000.0\km\x64\wmilib.lib" "C:\Program Files (x86)\Windows Kits\10\lib\wdf\kmdf\x64\1.15\WdfLdr.lib" "C:\Program Files (x86)\Windows Kits\10\lib\wdf\kmdf\x64\1.15\WdfDriverEntry.lib" /NODEFAULTLIB /MANIFEST:NO /DEBUG /PDB:x64\Release\echo.pdb /SUBSYSTEM:NATIVE,10.00 /Driver /OPT:REF /OPT:ICF /ENTRY:FxDriverEntry /RELEASE /IMPLIB:x64\Release\echo.lib /MERGE:_TEXT=.text;_PAGE=PAGE /MACHINE:X64 /PROFILE /guard:cf /kernel /IGNORE:4198,4010,4037,4039,4065,4070,4078,4087,4089,4221,4108,4088,4218,4218,4235 /osversion:10.0 /pdbcompress /debugtype:pdata x64\Release\device.obj x64\Release\driver.obj x64\Release\queue.obj
+[T 11:06:19 3808] Reading configuration file D:\codeql-home\databases\kmdf\working\tracing\compiler-tracing17166587096068644559.spec...
+[T 11:06:19 12364] Reading configuration file D:\codeql-home\databases\kmdf\working\tracing\compiler-tracing17166587096068644559.spec...
+[T 11:06:19 13832] Reading configuration file D:\codeql-home\databases\kmdf\working\tracing\compiler-tracing17166587096068644559.spec...
+[T 11:06:19 14232] Reading configuration file D:\codeql-home\databases\kmdf\working\tracing\compiler-tracing17166587096068644559.spec...
+[T 11:06:19 3128] Reading configuration file D:\codeql-home\databases\kmdf\working\tracing\compiler-tracing17166587096068644559.spec...
+[T 11:06:19 15052] Reading configuration file D:\codeql-home\databases\kmdf\working\tracing\compiler-tracing17166587096068644559.spec...
+[T 11:06:19 17216] Reading configuration file D:\codeql-home\databases\kmdf\working\tracing\compiler-tracing17166587096068644559.spec...
+[T 11:06:19 5428] Reading configuration file D:\codeql-home\databases\kmdf\working\tracing\compiler-tracing17166587096068644559.spec...
+[T 11:06:19 5356] Reading configuration file D:\codeql-home\databases\kmdf\working\tracing\compiler-tracing17166587096068644559.spec...
+[T 11:06:19 15620] Reading configuration file D:\codeql-home\databases\kmdf\working\tracing\compiler-tracing17166587096068644559.spec...
+[T 11:06:19 12324] Reading configuration file D:\codeql-home\databases\kmdf\working\tracing\compiler-tracing17166587096068644559.spec...
+[T 11:06:19 16488] Reading configuration file D:\codeql-home\databases\kmdf\working\tracing\compiler-tracing17166587096068644559.spec...
+[T 11:06:20 4676] Reading configuration file D:\codeql-home\databases\kmdf\working\tracing\compiler-tracing17166587096068644559.spec...
+[T 11:06:20 12520] Reading configuration file D:\codeql-home\databases\kmdf\working\tracing\compiler-tracing17166587096068644559.spec...
+[T 11:06:20 19288] Reading configuration file D:\codeql-home\databases\kmdf\working\tracing\compiler-tracing17166587096068644559.spec...
+[T 11:06:20 14680] Reading configuration file D:\codeql-home\databases\kmdf\working\tracing\compiler-tracing17166587096068644559.spec...
+[T 11:06:20 19076] Reading configuration file D:\codeql-home\databases\kmdf\working\tracing\compiler-tracing17166587096068644559.spec...
+[T 11:06:20 19076] === Intercepted call to C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30037\bin\Hostx86\x64\cl.exe === 
+[E 11:06:21 14536] CodeQL C/C++ Extractor 1.27.0-SNAPSHOT
+[E 11:06:21 14536] Current directory: D:\codeql-home\drivers\kmdf\driver\DriverSync
+[E 11:06:21 14536] Command: D:\codeql-home\codeql\cpp\tools\win64/extractor.exe --mimic "C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30037\bin\Hostx86\x64\cl.exe" @C:\Users\development\AppData\Local\Temp\tmp12871abba22d4c63aba3562fc8fd6088.rsp
+[E 11:06:21 14536] Not a compiler; exiting. Reason: --version stdout was:
+[T 11:06:21 19168] Reading configuration file D:\codeql-home\databases\kmdf\working\tracing\compiler-tracing17166587096068644559.spec...
+[T 11:06:21 19168] === Intercepted call to C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30037\bin\Hostx86\x64\link.exe === 
+[E 11:06:21 6092] CodeQL C/C++ Extractor 1.27.0-SNAPSHOT
+[E 11:06:21 6092] Current directory: D:\codeql-home\drivers\kmdf\driver\DriverSync
+[E 11:06:21 6092] Command: D:\codeql-home\codeql\cpp\tools\win64/extractor.exe --ms-linker --semmle-linker-executable "C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30037\bin\Hostx86\x64\link.exe" /ERRORREPORT:QUEUE @C:\Users\development\AppData\Local\Temp\tmpf402d958673e435d9463ae6d8ef42af9.rsp
+[E 11:06:21 6092] Expanded response file C:\Users\development\AppData\Local\Temp\tmpf402d958673e435d9463ae6d8ef42af9.rsp: /OUT:x64\Release\echo_2.sys /VERSION:10.0 /INCREMENTAL:NO /NOLOGO /WX /SECTION:INIT,d "C:\Program Files (x86)\Windows Kits\10\lib\10.0.22000.0\km\x64\BufferOverflowFastFailK.lib" "C:\Program Files (x86)\Windows Kits\10\lib\10.0.22000.0\km\x64\ntoskrnl.lib" "C:\Program Files (x86)\Windows Kits\10\lib\10.0.22000.0\km\x64\hal.lib" "C:\Program Files (x86)\Windows Kits\10\lib\10.0.22000.0\km\x64\wmilib.lib" "C:\Program Files (x86)\Windows Kits\10\lib\wdf\kmdf\x64\1.15\WdfLdr.lib" "C:\Program Files (x86)\Windows Kits\10\lib\wdf\kmdf\x64\1.15\WdfDriverEntry.lib" /NODEFAULTLIB /MANIFEST:NO /DEBUG /PDB:x64\Release\echo_2.pdb /SUBSYSTEM:NATIVE,10.00 /Driver /OPT:REF /OPT:ICF /ENTRY:FxDriverEntry /RELEASE /IMPLIB:x64\Release\echo_2.lib /MERGE:_TEXT=.text;_PAGE=PAGE /MACHINE:X64 /PROFILE /guard:cf /kernel /IGNORE:4198,4010,4037,4039,4065,4070,4078,4087,4089,4221,4108,4088,4218,4218,4235 /osversion:10.0 /pdbcompress /debugtype:pdata x64\Release\device.obj x64\Release\driver.obj x64\Release\queue.obj
+[T 11:06:21 17384] Reading configuration file D:\codeql-home\databases\kmdf\working\tracing\compiler-tracing17166587096068644559.spec...
+[T 11:06:21 3504] Reading configuration file D:\codeql-home\databases\kmdf\working\tracing\compiler-tracing17166587096068644559.spec...
+[T 11:06:21 6440] Reading configuration file D:\codeql-home\databases\kmdf\working\tracing\compiler-tracing17166587096068644559.spec...
+[T 11:06:21 12044] Reading configuration file D:\codeql-home\databases\kmdf\working\tracing\compiler-tracing17166587096068644559.spec...
+[T 11:06:21 3636] Reading configuration file D:\codeql-home\databases\kmdf\working\tracing\compiler-tracing17166587096068644559.spec...
+[T 11:06:21 14348] Reading configuration file D:\codeql-home\databases\kmdf\working\tracing\compiler-tracing17166587096068644559.spec...
+[T 11:06:21 4832] Reading configuration file D:\codeql-home\databases\kmdf\working\tracing\compiler-tracing17166587096068644559.spec...
+[T 11:06:22 4364] Reading configuration file D:\codeql-home\databases\kmdf\working\tracing\compiler-tracing17166587096068644559.spec...
+[T 11:06:22 16836] Reading configuration file D:\codeql-home\databases\kmdf\working\tracing\compiler-tracing17166587096068644559.spec...
+[T 11:06:22 18976] Reading configuration file D:\codeql-home\databases\kmdf\working\tracing\compiler-tracing17166587096068644559.spec...
+[T 11:06:22 18528] Reading configuration file D:\codeql-home\databases\kmdf\working\tracing\compiler-tracing17166587096068644559.spec...
+[T 11:06:22 8480] Reading configuration file D:\codeql-home\databases\kmdf\working\tracing\compiler-tracing17166587096068644559.spec...
+[T 11:06:22 7536] Reading configuration file D:\codeql-home\databases\kmdf\working\tracing\compiler-tracing17166587096068644559.spec...
+[T 11:06:22 6996] Reading configuration file D:\codeql-home\databases\kmdf\working\tracing\compiler-tracing17166587096068644559.spec...
